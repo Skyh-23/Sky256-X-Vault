@@ -1681,5 +1681,31 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 }
 </script>
+<script>
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  // Show your install button
+  document.getElementById("installBtn").style.display = "block";
+});
+
+function installApp() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User installed app');
+      } else {
+        console.log('User dismissed install');
+      }
+      deferredPrompt = null;
+    });
+  }
+}
+</script>
 </body>
 </html>
