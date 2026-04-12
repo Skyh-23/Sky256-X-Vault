@@ -1,3 +1,16 @@
+<div align="center">
+
+<img src="Preview-image.png" width="300" height="264"/>
+
+*Built by [Hiren Sumra](https://github.com/Skyh-23) — CEO & Co-Founder, Liethueis Foundation*
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Offline](https://img.shields.io/badge/100%25-Offline-brightgreen)
+![CUDA](https://img.shields.io/badge/CUDA-Accelerated-76B900)
+![Status](https://img.shields.io/badge/Status-Active%20Development-orange)
+
+</div>
 # 🔐 Sky256X Vault
 
 A **client-side encryption app** that securely encrypts and decrypts text and files directly in the browser using modern cryptography.
